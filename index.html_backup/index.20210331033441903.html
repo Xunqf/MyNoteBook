@@ -155,8 +155,6 @@ Error message and password prompt
 
 <li>$:/languages/zh-Hans</li>
 
-<li>$:/state/edit/references--1053522025</li>
-
 <li>$:/state/image-picker/system--716093679</li>
 
 <li>$:/state/showeditpreview</li>
@@ -185,7 +183,7 @@ Error message and password prompt
 
 <li>$:/themes/tiddlywiki/vanilla</li>
 
-<li>使用 TiddlyWiki 打造轻便个人 Wiki 知识库</li>
+<li>TiddlyWiki</li>
 
 </ul>
 </p>
@@ -13934,16 +13932,13 @@ Error message and password prompt
     }
 }</pre>
 </div>
-<div created="20210331034228273" modified="20210331034229317" title="$:/state/edit/references--1053522025">
-<pre>hide</pre>
-</div>
 <div created="20210331031300231" modified="20210331031433215" title="$:/state/image-picker/system--716093679">
 <pre>hide</pre>
 </div>
-<div created="20210331031341104" modified="20210331034300705" title="$:/state/showeditpreview">
-<pre>no</pre>
+<div created="20210331031341104" modified="20210331032007748" title="$:/state/showeditpreview">
+<pre>yes</pre>
 </div>
-<div created="20210331031057579" modified="20210331034546643" title="$:/state/sidebar">
+<div created="20210331031057579" modified="20210331032834153" title="$:/state/sidebar">
 <pre>yes</pre>
 </div>
 <div created="20210331030703922" modified="20210331033006650" title="$:/state/tab--1418380610">
@@ -13970,7 +13965,7 @@ Error message and password prompt
 <div title="$:/status/RequireReloadDueToPluginChange">
 <pre>no</pre>
 </div>
-<div created="20210331034047212" list="[[使用 TiddlyWiki 打造轻便个人 Wiki 知识库]]" modified="20210331034249612" title="$:/StoryList">
+<div created="20210331030655450" list="TiddlyWiki" modified="20210331033336572" title="$:/StoryList">
 <pre></pre>
 </div>
 <div author="JeremyRuston" core-version="&gt;=5.0.0" dependents="$:/themes/tiddlywiki/vanilla" description="Emphasises individual tiddlers" name="Snow White" plugin-priority="0" plugin-type="theme" title="$:/themes/tiddlywiki/snowwhite" type="application/json" version="5.1.23">
@@ -14082,7 +14077,7 @@ Error message and password prompt
     }
 }</pre>
 </div>
-<div created="20210331030944021" modified="20210331034537750" tags="Wiki" title="使用 TiddlyWiki 打造轻便个人 Wiki 知识库">
+<div created="20210331030944021" modified="20210331032829960" tags="Wiki" title="TiddlyWiki">
 <pre>! 使用 TiddlyWiki 打造轻便个人 Wiki 知识库
 
 这篇文章将简要介绍 TiddlyWiki 的特点，并且分享一些常用的参考链接、资源、插件和常见问题的解决方案，以方便有相近需求的小伙伴们。
@@ -14094,69 +14089,6 @@ TiddlyWiki ，按官方说法是一个「非线性个人 Web 笔记本」。相�
 注意，任意访客都可以体验到 TiddlyWiki 的全部功能，包括编辑和设置。不用担心，你可以随意折腾，因为你无法将更改保存到我的服务器上，只能下载到本地。
 
 ![TiddlyWiki 效果预览][http://img1.dimpurr.com/dimblog/2017/10/tiddlywiki-1.jpg]
-
-我想找到一个能方便快捷的打打笔记和维护个人知识库 Wiki 的方式已经很久了。
-
-笔记软件，例如 EverNote 、 WizNote 、 OneNote 的确十分不错，但是也会带来客户端是否跨平台、启动速度是否好看甚至默认文字排版是否美观的问题；而且，常规的笔记软件也达不到 Wiki 级别方便的 Tag 标签系统。当然， Wiki 系统有经典的 MediaWiki 系统，还有许许多多的静态 Wiki 系统、 Wiki 知识库类客户端。然而， MediaWiki 庞大、复杂和丑陋； Wiki 客户端程序有好有坏，有设计简陋也有强大美观，但是最大的限制还是往往不跨平台；一些可以用 Github Pages 部署的，基于 Markdown 的 Wiki 系统尽管几乎能在功能上满足我的需求，但是每一次撰写新条目和部署的复杂度还是令人难以接受。
-
-你可能已经看出了我口味相当的刁钻和需求相当的诡异 …… 高中时因为没有时间折腾，我搭建了一个 Ghost 博客来存放简单的读书笔记，然而随着某次 VPS 上的 SQLite 被我搞跪了之后，天国的 WIKI#0 除了遗留下来数据库里的几篇文章之外，就这样成为了历史。高中毕业的暑假来临，我决定动手寻找一款我需要的 Wiki 系统。于是，我找到了 TiddlyWiki 。
-
-TiddlyWiki 的特点
-程序和数据全部存储在一个单文件 html 中
-这让 TiddlyWiki 既可以在你的本机运行，类似一个在浏览器中运行的绿色版单文件应用程序；又可以上传到服务器上，和网络上的所有人分享
-同时部署极其简单，只需要一个能存放 html 的服务器，上传上去就可以使用，根本不需要 PHP、 Node.js、Python 或者其他什么语言环境，也没有任何配置步骤
-你可以随时再把服务器上的 TiddlyWiki 保存进本地或者 U 盘，以便带进任何没有网络的环境查阅
-作为 Wiki 系统，有 Tag 标签和条目关联等必须的基本功能，和强大的编辑器
-你能用 Tag 快速整理条目
-你能用 [[条目名]] 这样的语法快速链接到其他条目
-你能用条目名作为 Tag 其他条目，达到设置子条目的效果
-你甚至可以用 &lt;&lt;list-links &quot;[tag[ACM]sort[title]]-[tag[OJ 草稿和题解]]&quot;&gt;&gt; 这样的过滤器生成一个包含特定 Tag ，但是删除掉另一个特定 Tag 的条目列表！
-TiddlyWiki 使用一种类似 Markdown 但是稍有差异的语法，不过很快可以习惯并且非常好用
-方便的插件和主题系统
-可以通过插件支持代码高亮、 LaTex 数学公式、标准 Markdown 语法、文章嵌入 TODO 列表、条目加密锁定 ……
-可以安装 Material Design 风格、博客风格的样式主题 ……
-外观和操作设计别致，使用体验好
-TiddlyWiki 是一个典型的单页面 Web 应用，所以打开的时候全部内容都已经载入和缓存在了浏览器中，换而言之你不需要刷新页面，操作和访问体验非常快速和流畅
-TiddlyWiki 在右侧是搜索和多种方式的条目索引，而左边是可以卡片式展开多个和关闭的条目，还可以为特定的条目顺序和组合生成静态链接，浏览和使用十分方便
-如何开始
-进入 http://tiddlywiki.com 官网，阅读下面的 GettingStarted 条目。这里根据你的浏览器版本会切换的对应的教程，不过总的来说，你只需要点击 Download Empty 按钮就可以下载好一个全新的 TiddlyWiki 的 html 文件了。或者，你可以按照官方说明通过 Node.js 从 npm 安装。
-
-你已经可以开始本地体验和使用了。
-
-注意，你可能需要去设置页面手动安装并启用中文语言包。
-
-当然，我觉得大部分人应该都有上传到服务器上，以便发送地址和在线共享的需求。一般我们会需要把默认的 tiddlywiki.html 重命名成 index.html ，这样访问就很方便了。
-
-不过如果你直接上传 html 文件到服务器，你会发现，每次保存都会重新向本地下载一个编辑后的 html ，然后你需要不厌其烦的用 FTP 再进行上传和替换 …… 其实，只需要简单的配置 PHP 或者 Node.js 保存服务，就可以解决这个问题。
-
-额外的： http://tiddlyspot.com 提供了一个似乎是免费的在线托管 TiddlyWiki 的服务，还提供了专门用于 GTD 的一些模板； TiddlyDesktop 是一个 TiddlyWiki 专用的浏览器，或者说桌面客户端。
-
-PHP 保存
-PHP 保存非常容易配置。官方的教程在这里：http://tiddlywiki.com/#Saving%20on%20a%20PHP%20Server 
-
-在 https://code.google.com/archive/p/bidix/downloads 下载一份 TiddlyHome_*.*.*.zip
-找到里面 _th\lib\store.php 这个文件，解压并编辑里面的 $USERS = array( 'UserName1'=&gt;'Password1', etc) 为你想要的用户名和密码
-上传 store.php 到你的服务器，去 TiddlyWiki &gt; 保存 &gt; TiddlySpot 保存模块 ，设置 高级设置 &gt; 服务器网址 为这个 store.php 文件的完整地址，然后在上面填写用户名和密码
-现在，点击保存时，已经会直接保存在服务器上了
-注意：
-你可能需要把备份文件名设置成 index.html
-每次保存都会自动创建一份备份，你可以定期手动清理
-建议修改备份文件夹为 backup ，这样会把备份保存在 backup/ 子目录而非 . 根目录下
-因为 TiddlyWiki 并没有用户登陆界面，这个设置页面就相当于登陆页面。密码是按浏览器保存的，所以如果你想在当前浏览器退出登录，到设置页面清除密码设置就好。如果你换了一个浏览器打开 Wiki ，你将需要进入设置重新填写一次密码(相当于登陆)，才能使用在线保存。
-
-可能遇到的 store.php 错误
-如果你在如上配置完成后，点击保存后弹出正在保存 Wiki，此后就没有反应、并且在浏览器开发者工具中的 Network 网络面板看到 500 Internal Servel Error ，你可以尝试打开 PHP 的错误日志查看报错：
-
-vim  /usr/local/php/etc/php-fpm.conf
-php_flag[display_errors] = On # 直接在网页上显示错误信息
-#php_admin_value[error_log] = /usr/local/php/var/log/php_errors.log
-#php_admin_flag[log_errors] = on
-cat /usr/local/php/var/log/php-error.log # 或者直接在浏览器中查看报错
-如果遇到关于 split() 函数的问题：
-
-![图片](http://img1.dimpurr.com/dimblog/2017/10/QQ%E5%9B%BE%E7%89%8720180316213404.png)
-
-那么可能是你运行的 php 版本已经废弃这个函数，编辑 store.php 文件并查找替换所有的 split 为 explode 即可。
 
 </pre>
 </div>
